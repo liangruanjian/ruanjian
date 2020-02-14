@@ -11,7 +11,7 @@ public class Shuru{
 	String[] array=shuru.split(" ");
 	
 	{
-	if(array[0].equals("整数")) {
+	if(array[0].equals("整数")&&array[2].equals("等于")) {
 		a=str.indexOf(array[3]);
 		map.put(array[1], array[3]);
 		continue;
