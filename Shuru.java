@@ -9,7 +9,6 @@ public class Shuru{
 	while(true) {
 	String shuru=sc.nextLine().trim();
 	String[] array=shuru.split(" ");
-	
 	{
 	if(array[0].equals("整数")&&array[2].equals("等于")) {
 		a=str.indexOf(array[3]);
@@ -36,11 +35,15 @@ public class Shuru{
 	}
 	if(array[7].equals("否则")) {
 		int b=str.indexOf(array[3]);
-		if(a>b) {
+		if(str.indexOf(map.get(array[1]))>b) {
+			array[6]=array[6].replaceAll("”","");
+			array[6]=array[6].replaceAll("“","");
 			System.out.println(array[6]);
 			continue;
 		}
 		else {
+			array[9]=array[9].replaceAll("”","");
+			array[9]=array[9].replaceAll("“","");
 			System.out.println(array[9]);
 			continue;
 		}
